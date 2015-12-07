@@ -1,0 +1,107 @@
+//
+//  PrefixHeader.pch
+//  iShanghai
+//
+//  Created by qianfeng on 15/10/9.
+//  Copyright (c) 2015年 Muiz. All rights reserved.
+//
+
+// 应用接口
+#define http_of_recommend @"http://mobapi-into.shanghaiwow.com/api/home/featured"
+#define http_of_topic @"http://mobapi-into.shanghaiwow.com/api/home/topic"
+#define http_of_detail @"http://mobapi-into.shanghaiwow.com/api/item/detail"
+#define http_of_calendar @"http://mobapi-into.shanghaiwow.com/api/calendar/week"
+// 发现 分类
+#define http_of_find @"http://mobapi-into.shanghaiwow.com/api/find/plate"
+// 发现 列表
+#define http_of_find_list @"http://mobapi-into.shanghaiwow.com/api/find/list"
+// 发现 地点
+#define http_of_zone @"http://mobapi-into.shanghaiwow.com/api/find/zone"
+// 发现 附近推荐
+#define http_of_find_near @"http://mobapi-into.shanghaiwow.com/api/item/near"
+#define http_of_wish @"http://mobapi-into.shanghaiwow.com/api/item/wish-list"
+#define http_of_do @"http://mobapi-into.shanghaiwow.com/api/item/do-list"
+#define http_of_similar @"http://mobapi-into.shanghaiwow.com/api/item/item-similar"
+#define http_of_login @"http://mobapi-wowlife.shanghaiwow.com/api/member/mobile-login"
+#define http_of_logout @"http://mobapi-into.shanghaiwow.com/api/member/logout"
+#define http_of_profile @"http://mobapi-into.shanghaiwow.com/api/member/profile"
+#define http_of_my_following @"http://mobapi-into.shanghaiwow.com/api/member-following/index"
+#define http_of_my_fans @"http://mobapi-into.shanghaiwow.com/api/member-fans/index"
+#define http_of_my_wish @"http://mobapi-into.shanghaiwow.com/api/member-wish/index"
+#define http_of_my_do @"http://mobapi-into.shanghaiwow.com/api/member-do/index"
+#define http_of_set_wish @"http://mobapi-into.shanghaiwow.com/api/item/set-wish"
+#define http_of_set_do @"http://mobapi-into.shanghaiwow.com/api/item/set-do"
+#define http_of_set_like @"http://mobapi-into.shanghaiwow.com/api/item/set-like"
+// 获取验证码 mobile=13611665905
+#define http_of_auth_code @"http://mobapi-wowlife.shanghaiwow.com/api/member/mobile-send-code"
+// gender=&mobile=13611665905&mobileCode=Isi&name=Hash&password=qqqqqq(密码不得小于6位)
+#define http_of_register @"http://mobapi-wowlife.shanghaiwow.com/api/member/mobile-register"
+
+// 应用window
+#define MainWindow [UIApplication sharedApplication].delegate.window
+#define CURRENT_WINDOW [[UIApplication sharedApplication].windows lastObject]
+
+// 屏幕宽高
+#define SCREENW [UIScreen mainScreen].bounds.size.width
+#define SCREENH [UIScreen mainScreen].bounds.size.height
+#define WIDTH self.view.frame.size.width
+#define HEIGHT self.view.frame.size.height
+
+// 自定义
+#define Font(CGFLoat) [UIFont systemFontOfSize:CGFLoat]
+#define FontWithWeight(CGFLoat_Font, CGFLoat_Weight) [UIFont systemFontOfSize:CGFLoat_Font weight:CGFLoat_Weight]
+
+// JSON解析
+#define JsonParserWithData(data) [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil]
+
+// 日志输出 由于NSLog操作是非常耗时的，而当程序发布后，也不需要输出操作.
+// 程序的调试阶段DEBUG宏会一直存在.所以调试阶段会输出,发布后没有输出.
+#ifdef DEBUG
+#define DEBUGLog(...) NSLog(__VA_ARGS__)
+#else
+#define DEBUGLog(...)
+#endif
+
+// 图片
+#define Image(name) [UIImage imageNamed:name]
+// 渲染保持原颜色信息图片
+#define OriginalImage(name) [Image(name) imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]
+
+// 常用头文件
+#import "AppDelegate.h"
+#import "TabBarController.h"
+#import "ViewController.h"
+
+// 第三方插件
+#import "AFNetworking.h"
+#import "UIImageView+WebCache.h"
+#import "MBProgressHUD.h"
+#import "MBProgressHUD+Extension.h"
+#import "MJRefresh.h"
+
+// 工具类
+#import "UILabel+Extension.h"
+#import "UITextField+Extension.h"
+#import "UIView+Extension.h"
+#import "Tool.h"
+#import "Network.h"
+
+// 颜色
+#define lightBlack [UIColor colorWithRed:37/255.0 green:37/255.0 blue:37/255.0 alpha:1]
+#define lightBlue [UIColor colorWithRed:131/255.0 green:191/255.0 blue:206/255.0 alpha:1]
+#define lightGray [UIColor colorWithRed:210/255.0 green:204/255.0 blue:204/255.0 alpha:1]
+#define lightRed [UIColor colorWithRed:230/255.0 green:80/255.0 blue:80/255.0 alpha:1]
+#define fontBlack [UIColor colorWithRed:100/255.0 green:100/255.0 blue:100/255.0 alpha:1]
+#define fontYellow [UIColor colorWithRed:170/255.0 green:150/255.0 blue:90/255.0 alpha:1]
+#define btnGray [UIColor colorWithRed:244/255.0 green:245/255.0 blue:247/255.0 alpha:1]
+
+// 数值
+#define SmallLabelHeight 12.0f
+#define BigLabelHeight 16.0f
+#define Margin (SCREENW) / 24.6f
+#define HomeCellHeight (SCREENW) * (430 / 640.0)
+#define LineSpace 6.0f
+#define SmallText 16.0f
+#define IFindNavH 115.0f
+
+

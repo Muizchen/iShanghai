@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[DetailViewController initData]:DetailViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "_homeModel">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__57-[HomeViewController requestDataForTableView:withPageNo:]_block_invoke:HomeViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "_topicArr">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__36-[CalendarViewController resetData:]_block_invoke117:CalendarViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "numOfTableView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__32-[DetailViewController initData]_block_invoke:DetailViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "detailModel">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

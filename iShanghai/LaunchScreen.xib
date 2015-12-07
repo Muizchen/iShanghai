@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="E7F-Rf-7aX">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iShanghai" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="mNU-Rp-eZb">
+                    <rect key="frame" x="20" y="191" width="279" height="43"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright (c) 2015年 Muiz. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ZEw-mW-5kf" userLabel="Copyright (c) 2015年 Muiz. All rights reserved.">
+                    <rect key="frame" x="20" y="527" width="279" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchImage-1" translatesAutoresizingMaskIntoConstraints="NO" id="Smk-5Q-kep" userLabel="Luanch_ImageView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="mNU-Rp-eZb" firstAttribute="leading" secondItem="E7F-Rf-7aX" secondAttribute="leading" constant="20" symbolic="YES" id="1Wk-JZ-snr"/>
+                <constraint firstItem="Smk-5Q-kep" firstAttribute="leading" secondItem="E7F-Rf-7aX" secondAttribute="leading" id="1zw-nI-f0u"/>
+                <constraint firstAttribute="centerX" secondItem="ZEw-mW-5kf" secondAttribute="centerX" id="IhT-7y-E8J"/>
+                <constraint firstItem="Smk-5Q-kep" firstAttribute="top" secondItem="E7F-Rf-7aX" secondAttribute="top" id="Uoy-zp-s0O"/>
+                <constraint firstAttribute="bottom" secondItem="ZEw-mW-5kf" secondAttribute="bottom" constant="20" id="bLz-KV-It1"/>
+                <constraint firstAttribute="trailing" secondItem="Smk-5Q-kep" secondAttribute="trailing" id="c8V-Rf-YZq"/>
+                <constraint firstAttribute="centerY" secondItem="mNU-Rp-eZb" secondAttribute="centerY" multiplier="4:3" constant="1" id="dsQ-Yb-hjG"/>
+                <constraint firstItem="ZEw-mW-5kf" firstAttribute="leading" secondItem="E7F-Rf-7aX" secondAttribute="leading" constant="20" symbolic="YES" id="hfi-pr-txg"/>
+                <constraint firstAttribute="bottom" secondItem="Smk-5Q-kep" secondAttribute="bottom" id="nDH-SD-Eof"/>
+                <constraint firstAttribute="centerX" secondItem="mNU-Rp-eZb" secondAttribute="centerX" id="yT2-Jr-DMF"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="468" y="49"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="LaunchImage-1" width="320" height="480"/>
+    </resources>
+</document>
