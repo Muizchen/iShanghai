@@ -1,12 +1,12 @@
 # iShanghai
 > 
-> 一款介绍上海的APP。美食休闲、艺术画展、多彩夜生活、家居生活一应俱全。
+> Restaurants, Galleries(pleasure), Clubs(night life) things only in Shanghai.
 > 
 > iOS APP of Shanghai(Chinese V1.0)
 
 
 # Home
-> Introduction of Shanghai Food, Artists, Clubs...
+> Introduction of Shanghai Foods, Artists, Clubs...
 > 
 > ![Home](/Screenshots/Home.png)
 
@@ -35,5 +35,5 @@
 # Personal Profile> 
 > Following & Followers & Favourites & Had been to
 > 
-> ![Personal](/Screenshots/Search.png)
+> ![Personal](/Screenshots/Profile.png)
 
