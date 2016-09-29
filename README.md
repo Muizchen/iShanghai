@@ -32,7 +32,7 @@
 > ![Search](/Screenshots/Search.png)
 
 
-# Personal Profile> 
+# Personal Profile 
 > Following & Followers & Favourites & Had been to
 > 
 > ![Personal](/Screenshots/Profile.png)
